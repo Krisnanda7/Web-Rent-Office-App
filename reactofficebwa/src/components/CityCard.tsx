@@ -1,8 +1,8 @@
 import type { City } from "../types/type";
 
 export default function CityCard({ city }: CityCardProps) {
-  // const baseURL = "http://127.0.0.1:8000/storage";
-  const baseURL = import.meta.env.VITE_API_URL;
+  const baseURL = "http://127.0.0.1:8000/storage";
+  // const baseURL = import.meta.env.VITE_API_URL;
 
   console.log("city.photo:", city.photo);
   console.log("Full URL:", `${baseURL}/${city.photo}`);

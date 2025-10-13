@@ -83,7 +83,7 @@ export default function Details() {
         className="relative flex max-w-[1130px] mx-auto gap-[30px] mb-20 z-10"
       >
         <div className="flex flex-col w-full rounded-[20px] border border-[#E0DEF7] p-[30px] gap-[30px] bg-white">
-          <p className="w-fit rounded-full p-[6px_16px] bg-[#0D903A] font-bold text-sm leading-[21px] text-[#F7F7FD]">
+          <p className="w-fit rounded-full p-[6px_16px] bg-[#0A2463] font-bold text-sm leading-[21px] text-[#F7F7FD]">
             Popular
           </p>
           <div className="flex items-center justify-between">
@@ -233,7 +233,7 @@ export default function Details() {
         <div className="w-[392px] flex flex-col shrink-0 gap-[30px]">
           <div className="flex flex-col rounded-[20px] border border-[#E0DEF7] p-[30px] gap-[30px] bg-white">
             <div>
-              <p className="font-extrabold text-[32px] leading-[48px] text-[#0D903A]">
+              <p className="font-extrabold text-[32px] leading-[48px] text-[#0A2463]">
                 Rp {office?.price.toLocaleString("id")}
               </p>
               <p className="font-semibold mt-1">
@@ -256,7 +256,7 @@ export default function Details() {
             <hr className="border-[#F6F5FD]" />
             <div className="flex flex-col gap-[14px]">
               <Link to={`/office/${office?.slug}/book`}>
-                <div className="flex items-center justify-center w-full rounded-full p-[16px_26px] gap-3 bg-[#0D903A] font-bold text-[#F7F7FD]">
+                <div className="flex items-center justify-center w-full rounded-full p-[16px_26px] gap-3 bg-[#0A2463] font-bold text-[#F7F7FD]">
                   <img
                     src="/assets/images/icons/slider-horizontal-white.svg"
                     className="w-6 h-6"
@@ -276,7 +276,7 @@ export default function Details() {
             </div>
           </div>
           <div className="flex flex-col rounded-[20px] border border-[#E0DEF7] p-[30px] gap-[20px] bg-white">
-            <h2 className="font-bold">Contact Our Sales</h2>
+            <h2 className="font-bold">Contact Our </h2>
             <div className="flex flex-col gap-[30px]">
               <div className="flex items-center justify-between gap-3">
                 <div className="flex items-center gap-4">
@@ -288,8 +288,8 @@ export default function Details() {
                     />
                   </div>
                   <div className="flex flex-col gap-[2px]">
-                    <p className="font-bold">Masayoshi</p>
-                    <p className="text-sm leading-[21px]">Sales Manager</p>
+                    <p className="font-bold">Krisnanda</p>
+                    {/* <p className="text-sm leading-[21px]">Sales Manager</p> */}
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -319,8 +319,8 @@ export default function Details() {
                     />
                   </div>
                   <div className="flex flex-col gap-[2px]">
-                    <p className="font-bold">Fuji Ovina</p>
-                    <p className="text-sm leading-[21px]">Sales Manager</p>
+                    <p className="font-bold">Tian Ortisan</p>
+                    {/* <p className="text-sm leading-[21px]">Sales Manager</p> */}
                   </div>
                 </div>
                 <div className="flex items-center gap-3">

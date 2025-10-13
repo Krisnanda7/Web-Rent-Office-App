@@ -37,7 +37,7 @@ export default function Browse() {
             <div className="flex items-center gap-5">
               <a
                 href="#"
-                className="flex items-center rounded-full p-[20px_26px] gap-3 bg-[#0D903A]"
+                className="flex items-center rounded-full p-[20px_26px] gap-3 bg-[#0A2463]"
               >
                 <img
                   src="assets/images/icons/slider-horizontal-white.svg"
@@ -74,7 +74,7 @@ export default function Browse() {
             />
           </div>
         </section>
-        <div className="flex flex-col pt-[150px] pb-10 px-[120px] gap-10 bg-[#0D903A]">
+        <div className="flex flex-col pt-[150px] pb-10 px-[120px] gap-10 bg-[#0A2463]">
           <div className="logo-contianer flex items-center justify-center flex-wrap max-w-[1130px] h-[38px] mx-auto gap-[60px]">
             <img src="assets/images/logos/TESLA.svg" alt="clients logo" />
             <img src="assets/images/logos/Libra 2.svg" alt="clients logo" />
@@ -142,7 +142,8 @@ export default function Browse() {
                 Privacy-First Design
               </p>
               <p className="text-sm leading-[24px]">
-                Lorem available without even higher tax that cost much
+                Privasi yang terjaga dengan baik dapat membantu Anda fokus
+                bekerja
               </p>
             </div>
           </div>
@@ -159,7 +160,7 @@ export default function Browse() {
                 Easy Move Access
               </p>
               <p className="text-sm leading-[24px]">
-                Lorem available without even higher tax that cost much
+                Mudah berpindah tempat tanpa repot dan biaya tinggi
               </p>
             </div>
           </div>
@@ -176,7 +177,7 @@ export default function Browse() {
                 Flexibility Spaces
               </p>
               <p className="text-sm leading-[24px]">
-                Lorem available without even higher tax that cost much
+                Ruang kerja yang fleksibel sesuai kebutuhan bisnis Anda
               </p>
             </div>
           </div>
@@ -193,7 +194,7 @@ export default function Browse() {
                 Top-Rated Office
               </p>
               <p className="text-sm leading-[24px]">
-                Lorem available without even higher tax that cost much
+                Kantor dengan rating terbaik untuk kenyamanan Anda
               </p>
             </div>
           </div>
@@ -210,7 +211,7 @@ export default function Browse() {
                 Extra Snacks Available
               </p>
               <p className="text-sm leading-[24px]">
-                Lorem available without even higher tax that cost much
+                Camilan tambahan untuk menemani hari kerja Anda
               </p>
             </div>
           </div>
@@ -227,7 +228,7 @@ export default function Browse() {
                 Sustain for Business
               </p>
               <p className="text-sm leading-[24px]">
-                Lorem available without even higher tax that cost much
+                Mendukung bisnis Anda untuk tumbuh lebih baik dan berkelanjutan
               </p>
             </div>
           </div>

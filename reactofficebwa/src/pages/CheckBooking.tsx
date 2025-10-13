@@ -16,7 +16,7 @@ export default function CheckBooking() {
   const [bookingDetails, setBookingDetails] = useState<BookingDetails | null>(
     null
   );
-  const [error, setError] = useState<string | null>(null);
+  // const [error, setError] = useState<string | null>(null);
 
   const baseURL = "http://127.0.0.1:8000/storage";
 
