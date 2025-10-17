@@ -1,6 +1,21 @@
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    setIsLoggedIn(!!token); // true kalau token ada
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("customer");
+    alert("Berhasil logout!");
+    navigate("/");
+  };
   return (
     <nav className="bg-white">
       <div className="flex items-center justify-between w-full max-w-[1130px] py-[22px] mx-auto">
@@ -21,8 +36,25 @@ export default function Navbar() {
             <a href="">Events</a>
           </li>
           <li>
-            <a href="view-booking-details.html">My Booking</a>
+            <a href="">My Booking</a>
           </li>
+          {isLoggedIn ? (
+            <button
+              onClick={handleLogout}
+              className="bg-[#0A2463] hover:bg-red-700 px-4 py-2 rounded-xl font-semibold text-white"
+            >
+              Logout
+            </button>
+          ) : (
+            <>
+              <li>
+                <a href="/login">Login</a>
+              </li>
+              <li>
+                <a href="/Register">Register</a>
+              </li>
+            </>
+          )}
         </ul>
         <a
           href="#"

@@ -309,7 +309,7 @@ export default function Details() {
                   </a>
                 </div>
               </div>
-              <div className="flex items-center justify-between gap-3">
+              {/* <div className="flex items-center justify-between gap-3">
                 <div className="flex items-center gap-4">
                   <div className="w-[60px] h-[60px] rounded-full overflow-hidden">
                     <img
@@ -320,7 +320,7 @@ export default function Details() {
                   </div>
                   <div className="flex flex-col gap-[2px]">
                     <p className="font-bold">Tian Ortisan</p>
-                    {/* <p className="text-sm leading-[21px]">Sales Manager</p> */}
+                    <p className="text-sm leading-[21px]">Sales Manager</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -339,7 +339,7 @@ export default function Details() {
                     />
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

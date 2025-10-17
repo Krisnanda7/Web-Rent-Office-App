@@ -5,6 +5,8 @@ import BookOffice from "./pages/BookOffice";
 import CityDetails from "./pages/CityDetails";
 import SuccesBooking from "./pages/SuccesBooking";
 import CheckBooking from "./pages/CheckBooking";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import "./index.css";
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           <Route path="/city/:slug" element={<CityDetails />} />
           <Route path="/succes-booking" element={<SuccesBooking />} />
           <Route path="/check-booking" element={<CheckBooking />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </BrowserRouter>
     </>

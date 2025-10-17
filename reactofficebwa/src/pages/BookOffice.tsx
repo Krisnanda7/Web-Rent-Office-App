@@ -379,7 +379,7 @@ export default function BookOffice() {
           <button
             type="submit"
             disabled={isLoading}
-            className="flex items-center justify-center w-full rounded-full p-[16px_26px] gap-3 bg-[#0D903A] font-bold text-[#F7F7FD]"
+            className="flex items-center justify-center w-full rounded-full p-[16px_26px] gap-3 bg-[#0A2463] font-bold text-[#F7F7FD]"
           >
             <span>{isLoading ? "Loading..." : "i'allready paid"}</span>
           </button>
