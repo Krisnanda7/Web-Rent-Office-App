@@ -37,7 +37,7 @@ class CustomerAuthController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-        //pastikan Customer model pakai HasApiTokens
+        //Customer model pakai HasApiTokens
         $token = $customer->createToken('customer_token')->plainTextToken;
 
         return response()->json([
