@@ -1,11 +1,11 @@
 import { useState } from "react";
 import axios from "axios";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,7 +24,8 @@ export default function Login() {
       );
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("customer", JSON.stringify(res.data.customer));
-      navigate("/");
+      alert("Login berhasil!");
+      window.location.href = "/";
     } catch (error) {
       alert("Login gagal, periksa email atau password!");
     }
