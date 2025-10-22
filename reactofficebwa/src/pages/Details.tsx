@@ -93,7 +93,7 @@ export default function Details() {
               </h1>
               <div className="flex items-center gap-[6px] mt-[10px]">
                 <img
-                  src="/assets/images/icons/location.svg"
+                  src="/assets/images/icons/location.png"
                   className="w-6 h-6"
                   alt="icon"
                 />
@@ -137,7 +137,7 @@ export default function Details() {
           <div className="grid grid-cols-3 gap-x-5 gap-y-[30px]">
             <div className="flex items-center gap-4">
               <img
-                src="/assets/images/icons/security-user.svg"
+                src="/assets/images/icons/security-user.png"
                 className="w-[34px] h-[34px]"
                 alt="icon"
               />
@@ -148,7 +148,7 @@ export default function Details() {
             </div>
             <div className="flex items-center gap-4">
               <img
-                src="/assets/images/icons/cup.svg"
+                src="/assets/images/icons/cup.png"
                 className="w-[34px] h-[34px]"
                 alt="icon"
               />
@@ -159,7 +159,7 @@ export default function Details() {
             </div>
             <div className="flex items-center gap-4">
               <img
-                src="/assets/images/icons/home-trend-up.svg"
+                src="/assets/images/icons/home-trend-up.png"
                 className="w-[34px] h-[34px]"
                 alt="icon"
               />
@@ -172,7 +172,7 @@ export default function Details() {
             </div>
             <div className="flex items-center gap-4">
               <img
-                src="/assets/images/icons/coffee.svg"
+                src="/assets/images/icons/coffee.png"
                 className="w-[34px] h-[34px]"
                 alt="icon"
               />
@@ -183,7 +183,7 @@ export default function Details() {
             </div>
             <div className="flex items-center gap-4">
               <img
-                src="/assets/images/icons/3dcube.svg"
+                src="/assets/images/icons/3dcube.png"
                 className="w-[34px] h-[34px]"
                 alt="icon"
               />
@@ -194,7 +194,7 @@ export default function Details() {
             </div>
             <div className="flex items-center gap-4">
               <img
-                src="/assets/images/icons/group.svg"
+                src="/assets/images/icons/group.png"
                 className="w-[34px] h-[34px]"
                 alt="icon"
               />
@@ -245,7 +245,7 @@ export default function Details() {
               {office?.benefits?.map((benefit) => (
                 <div className="flex items-center gap-3">
                   <img
-                    src="/assets/images/icons/verify.svg"
+                    src="/assets/images/icons/verify.png"
                     className="w-[30px] h-[30px]"
                     alt="icon"
                   />
@@ -293,16 +293,16 @@ export default function Details() {
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <a href="#">
+                  <a href="tel:6282144603278">
                     <img
-                      src="/assets/images/icons/call-green.svg"
+                      src="/assets/images/icons/call.png"
                       className="w-10 h-10"
                       alt="icon"
                     />
                   </a>
-                  <a href="#">
+                  <a href="https://wa.me/6282144603278?text=hallo%20min,%20saya%20ada%20kendala">
                     <img
-                      src="/assets/images/icons/chat-green.svg"
+                      src="/assets/images/icons/chat.png"
                       className="w-10 h-10"
                       alt="icon"
                     />

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 export default function Register() {
   const [name, setName] = useState("");
@@ -42,11 +42,11 @@ export default function Register() {
       <div className="w-full max-w-md">
         {/* Main Card */}
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-10">
-          <div className="mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 leading-tight text-center">
+          <div className="mb-8 text-center">
+            <h1 className="text-xl md:text-5xl font-bold text-slate-900 mb-4 leading-tight text-center">
               CREATE YOUR ACCOUNT
             </h1>
-            <p className="text-slate-600 text-base md:text-lg">
+            <p className="text-gray-500 text-base md:text-lg">
               Bergabunglah dengan kami untuk mendapatkan pengalaman terbaik
               dalam mengelola bisnis Anda.
             </p>
@@ -99,7 +99,7 @@ export default function Register() {
             <button
               type="submit"
               disabled={isLoading}
-              className="w-full bg-[#000929]  text-white font-semibold py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed mt-6"
+              className="w-full bg-gray-900 text-white font-medium py-3 rounded-md hover:bg-gray-800 transition duration-300"
             >
               {isLoading ? "Mendaftar..." : "Daftar Sekarang"}
             </button>
@@ -108,12 +108,12 @@ export default function Register() {
           <div className="mt-6 text-center">
             <p className="text-slate-600">
               Sudah punya akun?{" "}
-              <a
-                href="/login"
+              <Link
+                to="/login"
                 className="text-blue-600 hover:text-blue-700 font-semibold hover:underline"
               >
                 Login di sini
-              </a>
+              </Link>
             </p>
           </div>
         </div>

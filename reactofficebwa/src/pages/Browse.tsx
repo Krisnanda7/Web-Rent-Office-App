@@ -22,7 +22,7 @@ export default function Browse() {
                 alt="icon"
               />
               <span className="font-semibold text-white">
-                We’ve won top productivity 500 fortunes
+                Kami sudah terpercaya oleh banyak perusahaan, mari bergabung!
               </span>
             </div>
             <h1 className="font-extrabold text-[50px] leading-[60px]">
@@ -36,7 +36,7 @@ export default function Browse() {
             </p>
             <div className="flex items-center gap-5">
               <a
-                href="#"
+                href="#Fresh-Space"
                 className="flex items-center rounded-full p-[20px_26px] gap-3 bg-[#0A2463]"
               >
                 <img
@@ -49,11 +49,11 @@ export default function Browse() {
                 </span>
               </a>
               <a
-                href="#"
+                href="#fresh-space"
                 className="flex items-center rounded-full border border-[#000929] p-[20px_26px] gap-3 bg-white"
               >
                 <img
-                  src="assets/images/icons/video-octagon.svg"
+                  src="assets/images/icons/video-octagon.png"
                   className="w-[30px] h-[30px]"
                   alt="icon"
                 />
@@ -90,31 +90,31 @@ export default function Browse() {
               <p className="text-xl leading-[30px] text-[#F7F7FD]">
                 Comfortable Space
               </p>
-              <p className="font-bold text-[38px] leading-[57px] text-white">
+              {/* <p className="font-bold text-[38px] leading-[57px] text-white">
                 580M+
-              </p>
+              </p> */}
             </div>
             <div className="flex flex-col gap-[2px] text-center">
               <p className="text-xl leading-[30px] text-[#F7F7FD]">
                 Startups Succeed
               </p>
-              <p className="font-bold text-[38px] leading-[57px] text-white">
+              {/* <p className="font-bold text-[38px] leading-[57px] text-white">
                 98%
-              </p>
+              </p> */}
             </div>
             <div className="flex flex-col gap-[2px] text-center">
               <p className="text-xl leading-[30px] text-[#F7F7FD]">Countries</p>
-              <p className="font-bold text-[38px] leading-[57px] text-white">
+              {/* <p className="font-bold text-[38px] leading-[57px] text-white">
                 90+
-              </p>
+              </p> */}
             </div>
             <div className="flex flex-col gap-[2px] text-center">
               <p className="text-xl leading-[30px] text-[#F7F7FD]">
                 Supportive Events
               </p>
-              <p className="font-bold text-[38px] leading-[57px] text-white">
+              {/* <p className="font-bold text-[38px] leading-[57px] text-white">
                 139M+
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -132,7 +132,7 @@ export default function Browse() {
           <div className="flex items-center gap-4">
             <div className="flex items-center justify-center shrink-0 w-[70px] h-[70px] rounded-[23px] bg-white overflow-hidden">
               <img
-                src="assets/images/icons/security-user.svg"
+                src="assets/images/icons/security-user.png"
                 className="w-[34px] h-[34px]"
                 alt="icon"
               />
@@ -150,7 +150,7 @@ export default function Browse() {
           <div className="flex items-center gap-4">
             <div className="flex items-center justify-center shrink-0 w-[70px] h-[70px] rounded-[23px] bg-white overflow-hidden">
               <img
-                src="assets/images/icons/group.svg"
+                src="assets/images/icons/group.png"
                 className="w-[34px] h-[34px]"
                 alt="icon"
               />
@@ -167,7 +167,7 @@ export default function Browse() {
           <div className="flex items-center gap-4">
             <div className="flex items-center justify-center shrink-0 w-[70px] h-[70px] rounded-[23px] bg-white overflow-hidden">
               <img
-                src="assets/images/icons/3dcube.svg"
+                src="assets/images/icons/3dcube.png"
                 className="w-[34px] h-[34px]"
                 alt="icon"
               />
@@ -184,7 +184,7 @@ export default function Browse() {
           <div className="flex items-center gap-4">
             <div className="flex items-center justify-center shrink-0 w-[70px] h-[70px] rounded-[23px] bg-white overflow-hidden">
               <img
-                src="assets/images/icons/cup.svg"
+                src="assets/images/icons/cup.png"
                 className="w-[34px] h-[34px]"
                 alt="icon"
               />
@@ -201,7 +201,7 @@ export default function Browse() {
           <div className="flex items-center gap-4">
             <div className="flex items-center justify-center shrink-0 w-[70px] h-[70px] rounded-[23px] bg-white overflow-hidden">
               <img
-                src="assets/images/icons/coffee.svg"
+                src="assets/images/icons/coffee.png"
                 className="w-[34px] h-[34px]"
                 alt="icon"
               />
@@ -218,7 +218,7 @@ export default function Browse() {
           <div className="flex items-center gap-4">
             <div className="flex items-center justify-center shrink-0 w-[70px] h-[70px] rounded-[23px] bg-white overflow-hidden">
               <img
-                src="assets/images/icons/home-trend-up.svg"
+                src="assets/images/icons/home-trend-up.png"
                 className="w-[34px] h-[34px]"
                 alt="icon"
               />

@@ -142,7 +142,7 @@ export default function CheckBooking() {
           <button
             disabled={isLoading}
             type="submit"
-            className="flex items-center justify-center rounded-full p-[12px_30px] gap-3 bg-[#0D903A] font-bold text-[#F7F7FD]"
+            className="flex items-center justify-center rounded-full p-[12px_30px] gap-3 bg-[#0A2463] font-bold text-[#F7F7FD]"
           >
             <span className="text-nowrap">
               {isLoading ? "Loading..." : "CheckBooking"}
@@ -167,7 +167,7 @@ export default function CheckBooking() {
                   </p>
                   <div className="flex items-center gap-[6px]">
                     <img
-                      src="assets/images/icons/location.svg"
+                      src="assets/images/icons/location.png"
                       className="w-6 h-6"
                       alt="icon"
                     />
@@ -230,7 +230,7 @@ export default function CheckBooking() {
               <hr className="border-[#F6F5FD]" />
               <div className="flex items-center gap-3">
                 <img
-                  src="assets/images/icons/shield-tick.svg"
+                  src="assets/images/icons/shield-tick.png"
                   className="w-[30px] h-[30px]"
                   alt="icon"
                 />
@@ -278,7 +278,7 @@ export default function CheckBooking() {
               <div className="flex justify-between">
                 <div className="flex items-center gap-4">
                   <img
-                    src="assets/images/icons/coffee.svg"
+                    src="assets/images/icons/coffee.png"
                     className="w-[34px] h-[34px]"
                     alt="icon"
                   />
@@ -289,7 +289,7 @@ export default function CheckBooking() {
                 </div>
                 <div className="flex items-center gap-4">
                   <img
-                    src="assets/images/icons/group.svg"
+                    src="assets/images/icons/group.png"
                     className="w-[34px] h-[34px]"
                     alt="icon"
                   />

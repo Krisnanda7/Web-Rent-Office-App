@@ -22,10 +22,6 @@ class CustomersTable
                     ->searchable(),
                 TextColumn::make('email')
                     ->searchable(),
-                TextColumn::make('phone_number')
-                    ->searchable(),
-                    TextColumn::make('password')
-                    ->searchable(),
             ])
             ->filters([
                 TrashedFilter::make(),

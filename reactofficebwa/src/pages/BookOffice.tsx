@@ -168,7 +168,7 @@ export default function BookOffice() {
               <p className="font-bold text-xl leading-[30px]">{office?.name}</p>
               <div className="flex items-center gap-[6px]">
                 <img
-                  src="/assets/images/icons/location.svg"
+                  src="/assets/images/icons/location.png"
                   className="w-6 h-6"
                   alt="icon"
                 />
@@ -185,7 +185,7 @@ export default function BookOffice() {
               </label>
               <div className="flex items-center rounded-full border border-[#000929] px-5 gap-[10px] transition-all duration-300 focus-within:ring-2 focus-within:ring-[#0D903A]">
                 <img
-                  src="/assets/images/icons/security-user-black.svg"
+                  src="/assets/images/icons/security-user-black.png"
                   className="w-6 h-6"
                   alt="icon"
                 />
@@ -254,7 +254,7 @@ export default function BookOffice() {
           <hr className="border-[#F6F5FD]" />
           <div className="flex items-center gap-3">
             <img
-              src="/assets/images/icons/shield-tick.svg"
+              src="/assets/images/icons/shield-tick.png"
               className="w-[30px] h-[30px]"
               alt="icon"
             />
@@ -269,7 +269,7 @@ export default function BookOffice() {
             <div className="grid grid-cols-2 gap-[30px]">
               <div className="flex items-center gap-4">
                 <img
-                  src="/assets/images/icons/coffee.svg"
+                  src="/assets/images/icons/coffee.png"
                   className="w-[34px] h-[34px]"
                   alt="icon"
                 />
@@ -282,7 +282,7 @@ export default function BookOffice() {
               </div>
               <div className="flex items-center gap-4">
                 <img
-                  src="/assets/images/icons/group.svg"
+                  src="/assets/images/icons/group.png"
                   className="w-[34px] h-[34px]"
                   alt="icon"
                 />
@@ -346,7 +346,7 @@ export default function BookOffice() {
                 <div className="flex items-center gap-1">
                   <p className="font-semibold">Krisnanda</p>
                   <img
-                    src="/assets/images/icons/verify.svg"
+                    src="/assets/images/icons/verify.png"
                     className="w-[18px] h-[18px]"
                     alt="icon"
                   />
@@ -366,7 +366,7 @@ export default function BookOffice() {
                 <div className="flex items-center gap-1">
                   <p className="font-semibold">Krisnanda</p>
                   <img
-                    src="/assets/images/icons/verify.svg"
+                    src="/assets/images/icons/verify.png"
                     className="w-[18px] h-[18px]"
                     alt="icon"
                   />

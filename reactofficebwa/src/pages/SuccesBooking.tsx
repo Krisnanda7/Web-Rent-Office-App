@@ -15,7 +15,7 @@ export default function SuccesBooking() {
         <div className="flex flex-col w-[450px] m-auto rounded-[20px] border border-[#E0DEF7] p-[30px] gap-[30px] bg-white">
           <div className="flex items-center gap-4">
             <img
-              src="/assets/images/icons/verify.svg"
+              src="/assets/images/icons/verify.png"
               className="w-[50px] h-[50px] flex shrink-0"
               alt="icon"
             />
@@ -36,7 +36,7 @@ export default function SuccesBooking() {
               <p className="font-bold text-xl leading-[30px]">{office.name}</p>
               <div className="flex items-center gap-[6px]">
                 <img
-                  src="/assets/images/icons/location.svg"
+                  src="/assets/images/icons/location.png"
                   className="w-6 h-6"
                   alt="icon"
                 />
@@ -47,7 +47,7 @@ export default function SuccesBooking() {
           <hr className="border-[#F6F5FD]" />
           <div className="flex items-center gap-4">
             <img
-              src="/assets/images/icons/receipt-text.svg"
+              src="/assets/images/icons/receipt-text.png"
               className="w-[34px] h-[34px]"
               alt="icon"
             />

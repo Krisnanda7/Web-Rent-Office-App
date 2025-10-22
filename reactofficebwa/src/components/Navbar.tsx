@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -14,7 +13,7 @@ export default function Navbar() {
     localStorage.removeItem("token");
     localStorage.removeItem("customer");
     alert("Berhasil logout!");
-    navigate("/");
+    window.location.href = "/";
   };
   return (
     <nav className="bg-white">
@@ -36,7 +35,7 @@ export default function Navbar() {
             <a href="">Events</a>
           </li>
           <li>
-            <a href="">My Booking</a>
+            <Link to={`/`}>My Booking</Link>
           </li>
           {isLoggedIn ? (
             <button

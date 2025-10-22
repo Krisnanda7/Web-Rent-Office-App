@@ -28,7 +28,7 @@ export default function OfficeCard({ office }: OfficeCardProps) {
             <div className="flex items-center justify-end gap-[6px]">
               <p className="font-semibold">{office.duration} days</p>
               <img
-                src="/assets/images/icons/clock.svg"
+                src="/assets/images/icons/clock.png"
                 className="w-6 h-6"
                 alt="icon"
               />
@@ -38,7 +38,7 @@ export default function OfficeCard({ office }: OfficeCardProps) {
           <div className="flex items-center justify-between">
             <div className="flex items-center justify-end gap-[6px]">
               <img
-                src="/assets/images/icons/location.svg"
+                src="/assets/images/icons/location.png"
                 className="w-6 h-6"
                 alt="icon"
               />
@@ -57,7 +57,7 @@ export default function OfficeCard({ office }: OfficeCardProps) {
           <div className="flex items-center justify-between">
             <div className="flex items-center justify-end gap-[6px]">
               <img
-                src="/assets/images/icons/wifi.svg"
+                src="/assets/images/icons/wifi.png"
                 className="w-6 h-6"
                 alt="icon"
               />
@@ -65,7 +65,7 @@ export default function OfficeCard({ office }: OfficeCardProps) {
             </div>
             <div className="flex items-center justify-end gap-[6px]">
               <img
-                src="/assets/images/icons/security-user.svg"
+                src="/assets/images/icons/security-user.png"
                 className="w-6 h-6"
                 alt="icon"
               />
