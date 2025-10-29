@@ -5,6 +5,25 @@ import OfficeCard from "../components/OfficeCard";
 import { Link } from "react-router-dom";
 
 export default function BrowseOfficeWrapper() {
+  useEffect(() => {
+    const elements = document.querySelectorAll(".animate-fade-in-scroll");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    elements.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
   const [offices, setOffices] = useState<Office[]>([]);
 
   const [loading, setLoading] = useState(true);
@@ -39,7 +58,7 @@ export default function BrowseOfficeWrapper() {
   return (
     <section
       id="Fresh-Space"
-      className="flex flex-col gap-[30px] w-full max-w-[1130px] mx-auto mt-[100px] mb-[120px]"
+      className="flex flex-col gap-[30px] w-full max-w-[1130px] mx-auto mt-[100px] mb-[120px] "
     >
       <h2 className="font-bold text-[32px] leading-[48px] text-nowrap text-center">
         Browse Our Fresh Space.
