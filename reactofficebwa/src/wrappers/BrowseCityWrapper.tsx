@@ -44,10 +44,7 @@ export default function BrowseCityWrapper() {
           You Can Choose <br />
           Our Favorite Cities
         </h2>
-        <a
-          href="#"
-          className="rounded-full rounded-full py-3 px-5 bg-white font-bold"
-        >
+        <a href="#" className="rounded-full  py-3 px-5 bg-white font-bold">
           Explore All City
         </a>
       </div>

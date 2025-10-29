@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -15,26 +15,42 @@ export default function Navbar() {
     alert("Berhasil logout!");
     window.location.href = "/";
   };
+  useEffect(() => {
+    const elements = document.querySelectorAll(".animate-fade-in-scroll");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    elements.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
   return (
     <nav className="bg-white">
       <div className="flex items-center justify-between w-full max-w-[1130px] py-[22px] mx-auto">
         <Link to={`/`}>
           <img src="/assets/images/icons/logo 1.png" alt="logo" />
         </Link>
-        <ul className="flex items-center gap-[50px] w-fit">
-          <li>
+        <ul className="flex items-center gap-[50px] w-fit animate-fade-in">
+          <li className="hover:text-[#447cff]">
             <Link to={`/`}>Browse</Link>
           </li>
-          <li>
+          <li className="hover:text-[#447cff]">
             <a href="">Popular</a>
           </li>
-          <li>
+          <li className="hover:text-[#447cff]">
             <a href="">Categories</a>
           </li>
-          <li>
+          <li className="hover:text-[#447cff]">
             <a href="">Events</a>
           </li>
-          <li>
+          <li className="hover:text-[#447cff]">
             <Link to={`/`}>My Booking</Link>
           </li>
           {isLoggedIn ? (
@@ -46,10 +62,10 @@ export default function Navbar() {
             </button>
           ) : (
             <>
-              <li>
+              <li className="bg-[#0A2463] text-white px-4 py-2 rounded-xl font-semibold animate-bounce">
                 <a href="/login">Login</a>
               </li>
-              <li>
+              <li className="border border-[#000929] px-4 py-2 rounded-xl font-semibold animate-bounce">
                 <a href="/Register">Register</a>
               </li>
             </>

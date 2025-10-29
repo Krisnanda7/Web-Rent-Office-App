@@ -1,8 +1,25 @@
+import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import BrowseCityWrapper from "../wrappers/BrowseCityWrapper";
 import BrowseOfficeWrapper from "../wrappers/BrowseOfficeWrapper";
 
 export default function Browse() {
+  useEffect(() => {
+    const elements = document.querySelectorAll(".animate-fade-in-scroll");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    elements.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
   return (
     <>
       <Navbar />
@@ -13,7 +30,8 @@ export default function Browse() {
         >
           <div
             id="Hero-Text"
-            className="relative flex flex-col w-full max-w-[650px] h-fit rounded-[30px] border border-[#E0DEF7] p-10 gap-[30px] bg-white mt-[70px] ml-[calc((100%-1130px)/2)] z-10"
+            className="relative flex flex-col w-full max-w-[650px] h-fit rounded-[30px] border border-[#E0DEF7]
+             p-10 gap-[30px] bg-white mt-[70px] ml-[calc((100%-1130px)/2)] z-10 animate-fade-slide-up"
           >
             <div className="flex items-center w-fit rounded-full py-2 px-4 gap-[10px] bg-[#000929]">
               <img
@@ -34,10 +52,10 @@ export default function Browse() {
               Kantor yang tepat dapat memberikan impact pekerjaan menjadi lebih
               baik dan sehat dalam tumbuhkan karir.
             </p>
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-5  animate-fade-in">
               <a
                 href="#Fresh-Space"
-                className="flex items-center rounded-full p-[20px_26px] gap-3 bg-[#0A2463]"
+                className="flex items-center rounded-full p-[20px_26px] gap-3 bg-[#0A2463] animte-fade-in"
               >
                 <img
                   src="assets/images/icons/slider-horizontal-white.svg"
@@ -50,7 +68,7 @@ export default function Browse() {
               </a>
               <a
                 href="#fresh-space"
-                className="flex items-center rounded-full border border-[#000929] p-[20px_26px] gap-3 bg-white"
+                className="flex items-center rounded-full border border-[#000929] p-[20px_26px] gap-3 bg-white "
               >
                 <img
                   src="assets/images/icons/video-octagon.png"
@@ -65,7 +83,7 @@ export default function Browse() {
           </div>
           <div
             id="Hero-Image"
-            className="absolute right-0 w-[calc(100%-((100%-1130px)/2)-305px)] h-[720px] rounded-bl-[40px] overflow-hidden"
+            className="absolute right-0 w-[calc(100%-((100%-1130px)/2)-305px)] h-[720px] rounded-bl-[40px] overflow-hidden  animate-fade-in"
           >
             <img
               src="assets/images/backgrounds/banner.png"
@@ -122,7 +140,7 @@ export default function Browse() {
       <BrowseCityWrapper />
       <section
         id="Benefits"
-        className="flex items-center justify-center w-[1015px] mx-auto gap-[100px] mt-[100px]"
+        className="flex items-center justify-center w-[1015px] mx-auto gap-[100px] mt-[100px] animate-fade-in-scroll"
       >
         <h2 className="font-bold text-[32px] leading-[48px] text-nowrap">
           We Might Good <br />

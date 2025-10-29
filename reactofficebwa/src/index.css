@@ -1071,7 +1071,7 @@ video {
   background-color: rgb(255 133 45 / var(--tw-bg-opacity));
 }
 
-.bg-\[linear-gradient\(180deg\2c
+/* .bg-\[linear-gradient\(180deg\2c
   _rgba\(0\2c
   0\2c
   0\2c
@@ -1082,9 +1082,9 @@ video {
     rgba(0, 0, 0, 0) 0%,
     #000000 91.83%
   );
-}
+} */
 
-.bg-\[linear-gradient\(180deg\2c
+/* .bg-\[linear-gradient\(180deg\2c
   _rgba\(0\2c
   0\2c
   0\2c
@@ -1098,7 +1098,7 @@ video {
     rgba(0, 0, 0, 0) 49.87%,
     rgba(0, 0, 0, 0.8) 100%
   );
-}
+} */
 
 .bg-none {
   background-image: none;
@@ -1417,4 +1417,53 @@ body {
 
 .\[\&\:\:-webkit-calendar-picker-indicator\]\:opacity-0::-webkit-calendar-picker-indicator {
   opacity: 0;
+}
+
+/* ===== Animasi Fade dan Slide ===== */
+
+/* Fade + Slide Up */
+@keyframes fade-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-slide-up {
+  animation: fade-slide-up 1s ease-out forwards;
+}
+
+/* Fade In */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-fade-in {
+  animation: fade-in 1.2s ease-out forwards;
+}
+
+/* Fade saat scroll */
+.animate-fade-in-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.animate-fade-in-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover tombol lembut */
+a:hover {
+  transform: scale(1.05);
+  transition: transform 0.25s ease;
 }

@@ -33,7 +33,7 @@ export default function Login() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-8">
+      <div className="bg-white rounded-3xl shadow-lg max-w-md w-full p-8">
         <div className="mb-8 text-center">
           <h1 className="text-xl font-bold text-gray-900 mb-2">LOG IN</h1>
           <p className="text-gray-600 text-sm md:text-base">
